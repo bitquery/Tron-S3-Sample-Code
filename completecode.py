@@ -8,22 +8,6 @@ from google.protobuf.json_format import MessageToJson
 import logging
 import base64
 
-def convert_to_bytes(data):
-  """Converts the given data to bytes.
-
-  Args:
-    data: A string or bytes object.
-
-  Returns:
-    A bytes object.
-  """
-
-  if isinstance(data, str):
-    data = data.encode()
-  return data
-
-
-
 
 logging.basicConfig(level=logging.INFO)
 
